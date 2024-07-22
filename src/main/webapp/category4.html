@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (min-width: 600px) {
+            .card {
+                width: 45%;
+            }
+        }
+        @media (min-width: 900px) {
+            .card {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Groceries</h2>
+    </header>
+
+    <main>
+        <section>
+            <!-- Oils -->
+            <div class="card">
+                <img src="https://www.gffoodservice.com.au/content/uploads/2020/03/article-hero-banner-vege_oil-@1x.jpg" alt="Oils">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Oils</h2>
+                <p style="margin: 0;">Wide variety of cooking oils for your kitchen.</p>
+            </div>
+
+            <!-- Rice & Rice Products -->
+            <div class="card">
+                <img src="https://www.preparedfoods.com/ext/resources/ISSUES/2019/January/GettyImages-576710494.jpg?1547157944" alt="Rice & Rice Products">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Rice & Rice Products</h2>
+                <p style="margin: 0;">High-quality rice and rice-based products.</p>
+            </div>
+
+            <!-- Sugar -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSNFdm2pMKFFAelC6Gpu3x4-OaueD-ThBflw&s" alt="Sugar">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Sugar</h2>
+                <p style="margin: 0;">Refined and raw sugars for your sweet needs.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="margin: 0;">&copy; 2024 Our E-Commerce Website</p>
+    </footer>
+
+</body>
+</html>
