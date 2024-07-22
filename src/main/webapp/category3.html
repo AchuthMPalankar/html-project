@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (min-width: 600px) {
+            .card {
+                width: 45%;
+            }
+        }
+        @media (min-width: 900px) {
+            .card {
+                width: 30%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Mobile Phones</h2>
+    </header>
+
+    <main>
+        <section>
+            <!-- iPhone -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5rIxFRNX2QZlnQidGjE75yAg9jR4Jhy3Jgw&s" alt="iPhone">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">iPhone</h2>
+                <p style="margin: 0;">Premium smartphones with advanced features.</p>
+            </div>
+
+            <!-- Vivo -->
+            <div class="card">
+                <img src="https://www.channelinfoline.com/wp-content/uploads/2017/12/Vivo-Logo.jpg" alt="Vivo">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Vivo</h2>
+                <p style="margin: 0;">Smartphones with cutting-edge technology.</p>
+            </div>
+
+            <!-- Samsung -->
+            <div class="card">
+                <img src="https://1000logos.net/wp-content/uploads/2017/06/Samsung-logo.jpg" alt="Samsung">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Samsung</h2>
+                <p style="margin: 0;">High-quality electronics and entertainment products.</p>
+            </div>
+
+            <!-- Xiaomi -->
+            <div class="card">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/927/146/original/xiaomi-brand-logo-phone-symbol-with-name-white-design-chinese-mobile-illustration-with-orange-background-free-vector.jpg" alt="Xiaomi">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Xiaomi</h2>
+                <p style="margin: 0;">Innovative solutions for a better life.</p>
+            </div>
+
+            <!-- Oneplus -->
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT268kxb5KxjCoOoyiuGJz5IA2HP_IveIjdug&s" alt="Oneplus">
+                <h2 style="font-size: 1.5em; margin: 0 0 10px;">Oneplus</h2>
+                <p style="margin: 0;">Innovative healthcare and lighting solutions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="margin: 0;">&copy; 2024 Our E-Commerce Website</p>
+    </footer>
+
+</body>
+</html>
