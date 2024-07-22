@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,14 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             width: 100%;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
             background: #333;
             color: #fff;
@@ -25,9 +28,11 @@
             align-items: center;
             padding: 10px 20px;
         }
+
         header img {
             height: 40px;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -35,30 +40,44 @@
             align-items: center;
             margin: 0;
         }
+
         nav ul li {
             margin: 0 15px;
         }
+
         nav ul li a {
             color: #fff;
             text-decoration: none;
             transition: color 0.3s;
         }
+
         nav ul li a:hover {
             color: #5d9cec;
         }
+
         .hero {
-            background: #5d9cec;
+            background: url('https://img.freepik.com/premium-photo/top-view-online-shopping-concept-with-credit-card-smart-phone-computer-isolated-office-yellow-table-background_315337-5991.jpg') no-repeat center center/cover;
             color: #fff;
-            padding: 50px 0;
+            padding: 100px 0;
             text-align: center;
+            position: relative;
         }
+
         .hero h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
+        .hero p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
         .auth-buttons {
             margin: 20px 0;
         }
+
         .auth-buttons a {
             background: #fff;
             color: #333;
@@ -69,16 +88,61 @@
             display: inline-block;
             transition: background-color 0.3s, color 0.3s;
         }
+
         .auth-buttons a:hover {
             background-color: #333;
             color: #fff;
         }
+
+        .features {
+            background: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .features .feature {
+            display: inline-block;
+            width: 30%;
+            margin: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+
+        .features .feature:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .features .feature img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .features .feature h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .features .feature p {
+            color: #666;
+        }
+
         .categories {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 20px 0;
         }
+
         .category {
             background: #fff;
             border: 1px solid #ddd;
@@ -86,54 +150,95 @@
             margin: 10px;
             padding: 20px;
             flex: 1 1 200px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: box-shadow 0.3s, transform 0.3s;
         }
+
         .category h3 {
             margin: 0 0 10px;
         }
+
         .category a {
             color: #333;
             text-decoration: none;
             transition: color 0.3s;
         }
+
         .category a:hover {
             color: #5d9cec;
         }
+
         .category:hover {
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transform: translateY(-5px);
         }
+
+        .testimonial {
+            background: #fff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .testimonial h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .testimonial .quote {
+            font-style: italic;
+            color: #666;
+            margin: 20px 0;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         footer {
             background: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
+
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
                 align-items: center;
             }
+
             nav ul {
                 flex-direction: column;
                 align-items: center;
                 margin: 0;
             }
+
             nav ul li {
                 margin: 10px 0;
             }
+
+            .features .feature {
+                width: 80%;
+            }
+
             .categories {
                 flex-direction: column;
                 align-items: center;
             }
+
+            .category {
+                width: 80%;
+            }
         }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="logo.png" alt="Logo">
+        <img src="https://media.licdn.com/dms/image/C5616AQFuSmcvhgRCkg/profile-displaybackgroundimage-shrink_200_800/0/1668508754775?e=2147483647&v=beta&t=hRPAxWWqvuwPFPeQ_kVymCwvjzW6BHo4LnFzg6_SvyE"
+            alt="Logo">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -145,17 +250,43 @@
             </ul>
         </nav>
     </header>
-    
+
     <div class="hero">
         <div class="container">
             <h1>Welcome to Our Website</h1>
+            <p>Your one-stop solution for all your needs</p>
             <div class="auth-buttons">
                 <a href="login.html">Login</a>
                 <a href="signup.html">Sign Up</a>
             </div>
         </div>
     </div>
-    
+
+    <div class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature">
+                <img src="https://swissuplabs.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/o/box.easy.navigation.box.png"
+                    alt="Feature 1">
+                <h3>Feature 1</h3>
+                <p>Some quick example text to build on the feature title and make up the bulk of the feature's content.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="https://img.freepik.com/premium-vector/performance-flat-icon-colored-sign-from-machine-learning-collection-creative-performance-icon-illustration-web-design-infographics-more_676904-1997.jpg" alt="Feature 2">
+                <h3>Feature 2</h3>
+                <p>Some quick example text to build on the feature title and make up the bulk of the feature's content.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="https://img.freepik.com/vetores-premium/web-security-flat-vector-icon_9206-168.jpg" alt="Feature 3">
+                <h3>Feature 3</h3>
+                <p>Some quick example text to build on the feature title and make up the bulk of the feature's content.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <section class="categories">
             <div class="category">
@@ -176,11 +307,20 @@
             </div>
         </section>
     </div>
-    
+
+    <div class="testimonial">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="quote">"This website is amazing. It has everything I need and more!"</div>
+            <div class="author">- Achuth M Palankar</div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2024 Our Website</p>
         </div>
     </footer>
 </body>
+
 </html>
